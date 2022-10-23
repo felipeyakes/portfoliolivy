@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: Carter;
+    color: white;
+    background-color: black;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+header{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+    box-shadow: 5px 5px 10px #a945c7
+}
+
+header img{
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+main{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+footer{
+    padding-top: 50px;
+    padding-bottom: 55px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 10px #a945c7
+}
+
+main h3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 18pt;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    box-shadow: 03px 03px 03px 03px rgb(255, 255, 255);
+    text-align: center;
+}
+.btn-neon:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 0s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#a945c7);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+@media screen and (max-width: 500px) {
+    .buttons{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
