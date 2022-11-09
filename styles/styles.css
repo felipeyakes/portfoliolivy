@@ -14,7 +14,9 @@ header{
     padding-top: 35px;
     padding-bottom: 35px;
     text-align: center;
-    box-shadow: 5px 5px 10px #a945c7
+    box-shadow: 5px 5px 10px #a945c7;
+    display: flex;
+    justify-content: space-around;
 }
 
 header img{
@@ -119,9 +121,21 @@ main h3{
     transition-delay: 0.75s;
 }
 
+.button-container{
+    margin-top: 180px;
+    margin-bottom: 180px;
+}
+
+header a{
+    color: #a945c7;
+    font-size: 25pt;
+    
+}
+
 @media screen and (max-width: 500px) {
     .buttons{
         display: grid;
         grid-template-columns: 1fr;
     }
 }
+
