@@ -11,6 +11,7 @@
 }
 
 header{
+    width: 100vw;
     padding-top: 35px;
     padding-bottom: 35px;
     text-align: center;
@@ -122,14 +123,21 @@ main h3{
 }
 
 .button-container{
-    margin-top: 180px;
-    margin-bottom: 180px;
+    margin-top: 85px;
+    margin-bottom: 50px;
 }
 
 header a{
     color: #a945c7;
     font-size: 25pt;
     
+}
+
+.banner-img{
+    width: 100vw;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 500px) {
